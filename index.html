@@ -8,47 +8,116 @@
         body {
             margin: 0;
             font-family: 'Arial', sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-image: url('fundo3.png'); /* Use local background image */
+            background-image: url('background.jpg'); /* Image in root */
             background-size: cover;
             background-position: center;
-            color: #e2e8f0; /* Light grayish color */
+            color: #e2e8f0;
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: rgba(30, 41, 59, 0.9);
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fbbf24;
+            text-decoration: none;
+            font-size: 1.2rem;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #eab308;
         }
 
         .container {
             text-align: center;
+            background-color: rgba(30, 41, 59, 0.8);
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+            margin-top: 80px;
         }
 
         h1 {
             font-size: 3rem;
-            color: #FFBE00; /* Fluorescent Orange */
+            color: #fbbf24;
             margin-bottom: 1rem;
-            text-shadow:  
-                2px 2px 1px #FAF9F6,
-                2px -2px 1px #FAF9F6,
-                -2px -2px 1px #FAF9F6,
-                -2px 2px 1px #FAF9F6;
         }
 
         p {
             font-size: 1.2rem;
-            color: #FAF9F6; /* Off-white */
+            color: #94a3b8;
             margin-bottom: 2rem;
-            text-shadow:  
-                2px 2px 1px #2e2e2e,
-                2px -2px 1px #2e2e2e,
-                -2px -2px 1px #2e2e2e,
-                -2px 2px 1px #2e2e2e;
+        }
+
+        .hero-image {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            border-radius: 12px;
+            margin: 0 auto 2rem;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+        }
+
+        .notify-btn {
+            padding: 1rem 2rem;
+            font-size: 1rem;
+            font-weight: bold;
+            color: #1e293b;
+            background-color: #fbbf24;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .notify-btn:hover {
+            background-color: #eab308;
+        }
+
+        section {
+            padding: 4rem;
+            text-align: center;
+        }
+
+        #arithmetics, #algebra {
+            background-color: rgba(30, 41, 59, 0.9);
+            margin: 2rem auto;
+            padding: 2rem;
+            border-radius: 12px;
+            width: 80%;
         }
     </style>
 </head>
 <body>
+    <header>
+        <nav>
+            <a href="#arithmetics">Arithmetics</a>
+            <a href="#algebra">Algebra</a>
+        </nav>
+    </header>
+    
     <div class="container">
         <h1>Coming Soon</h1>
         <p>Our website is currently under construction. Stay tuned for something amazing!</p>
+        <img src="hero-image.jpg" alt="Coming Soon Image" class="hero-image">
+        <button class="notify-btn">Notify Me</button>
     </div>
+
+    <section id="arithmetics">
+        <h2>Arithmetics</h2>
+        <p>Explore fundamental mathematical operations including addition, subtraction, multiplication, and division.</p>
+    </section>
+
+    <section id="algebra">
+        <h2>Algebra</h2>
+        <p>Dive into equations, expressions, and algebraic structures that shape advanced mathematics.</p>
+    </section>
 </body>
 </html>
