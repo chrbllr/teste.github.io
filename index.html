@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coming Soon</title>
+    <title>Math Hub</title>
     <style>
         body {
             margin: 0;
             font-family: 'Arial', sans-serif;
-            background-image: url('fundo3.png'); /* Use local background image */
+            background-image: url('fundo3.png'); /* Image in root */
             background-size: cover;
             background-position: center;
             color: #e2e8f0;
@@ -56,18 +56,9 @@
             margin-bottom: 2rem;
         }
 
-        .hero-image {
-            width: 100%;
-            max-width: 600px;
-            height: auto;
-            border-radius: 12px;
-            margin: 0 auto 2rem;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
-        }
-
-        .notify-btn {
+        .action-btn {
             padding: 1rem 2rem;
-            font-size: 1rem;
+            font-size: 1.2rem;
             font-weight: bold;
             color: #1e293b;
             background-color: #fbbf24;
@@ -75,9 +66,11 @@
             border-radius: 8px;
             cursor: pointer;
             transition: all 0.3s ease;
+            margin: 10px;
+            display: inline-block;
         }
 
-        .notify-btn:hover {
+        .action-btn:hover {
             background-color: #eab308;
         }
 
@@ -98,14 +91,16 @@
 <body>
     <header>
         <nav>
-            <a href="#arithmetics">Arithmetics</a>
-            <a href="#algebra">Algebra</a>
+            <a href="#about">About</a>
+            <a href="#social">Social Media</a>
         </nav>
     </header>
     
     <div class="container">
-        <h1>Coming Soon</h1>
-        <p>Our website is currently under construction. Stay tuned for something amazing!</p>
+        <h1>Welcome to Math Hub</h1>
+        <p>Choose a category to get started:</p>
+        <a href="#arithmetics" class="action-btn">Arithmetics</a>
+        <a href="#algebra" class="action-btn">Algebra</a>
     </div>
 
     <section id="arithmetics">
