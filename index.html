@@ -1,3 +1,4 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,10 +9,15 @@
         body {
             margin: 0;
             font-family: 'Arial', sans-serif;
-            background-image: url('fundo3.png'); /* Image in root */
+            background-image: url('background.jpg'); /* Image in root */
             background-size: cover;
             background-position: center;
             color: #e2e8f0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
         }
 
         header {
@@ -41,7 +47,6 @@
             padding: 2rem;
             border-radius: 12px;
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
-            margin-top: 80px;
         }
 
         h1 {
@@ -67,24 +72,12 @@
             cursor: pointer;
             transition: all 0.3s ease;
             margin: 10px;
+            text-decoration: none;
             display: inline-block;
         }
 
         .action-btn:hover {
             background-color: #eab308;
-        }
-
-        section {
-            padding: 4rem;
-            text-align: center;
-        }
-
-        #arithmetics, #algebra {
-            background-color: rgba(30, 41, 59, 0.9);
-            margin: 2rem auto;
-            padding: 2rem;
-            border-radius: 12px;
-            width: 80%;
         }
     </style>
 </head>
@@ -99,18 +92,8 @@
     <div class="container">
         <h1>Welcome to Math Hub</h1>
         <p>Choose a category to get started:</p>
-        <a href="#arithmetics" class="action-btn">Arithmetics</a>
-        <a href="#algebra" class="action-btn">Algebra</a>
+        <a href="arithmetics.html" class="action-btn">Arithmetics</a>
+        <a href="algebra.html" class="action-btn">Algebra</a>
     </div>
-
-    <section id="arithmetics">
-        <h2>Arithmetics</h2>
-        <p>Explore fundamental mathematical operations including addition, subtraction, multiplication, and division.</p>
-    </section>
-
-    <section id="algebra">
-        <h2>Algebra</h2>
-        <p>Dive into equations, expressions, and algebraic structures that shape advanced mathematics.</p>
-    </section>
 </body>
 </html>
